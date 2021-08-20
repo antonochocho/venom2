@@ -40,11 +40,6 @@ button {
   margin: 0 auto;
 }
 
-html,
-body {
-  overflow: hidden;
-}
-
 html {
   height: 100%;
   width: 100%;
@@ -281,17 +276,28 @@ body {
   opacity: 0.7;
 }
 
+.decoration {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .venom {
   position: absolute;
   top: 25px;
   right: 0;
+  margin-right: 0;
   -webkit-animation: venom 3s ease 1;
           animation: venom 3s ease 1;
 }
 
 @-webkit-keyframes venom {
   0% {
-    right: -700px;
+    margin-right: -700px;
   }
 
   100% {
@@ -301,7 +307,7 @@ body {
 
 @keyframes venom {
   0% {
-    right: -700px;
+    margin-right: -700px;
   }
 
   100% {
@@ -368,13 +374,14 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  margin-right: 0;
   -webkit-animation: blood 3s ease 1;
           animation: blood 3s ease 1;
 }
 
 @-webkit-keyframes blood {
   0% {
-    right: -1500px;
+    margin-right: -1500px;
   }
 
   100% {
@@ -384,7 +391,7 @@ body {
 
 @keyframes blood {
   0% {
-    right: -1500px;
+    margin-right: -1500px;
   }
 
   100% {
@@ -751,11 +758,6 @@ body {
   ._container {
     max-width: none;
     padding: 0 25px;
-  }
-
-  html,
-  body {
-    overflow: unset;
   }
 
   body {
