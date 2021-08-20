@@ -891,7 +891,7 @@ body {
     width: 610px;
     top: 40px;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.32;
   }
 
   .slide {
@@ -1027,7 +1027,7 @@ body {
   .venom {
     width: 500px;
     top: 80px;
-    opacity: 0.4;
+    opacity: 0.32;
   }
 
   .blood {
@@ -1046,6 +1046,47 @@ body {
   .about-trailer iframe {
     width: 100%;
     height: 150px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header {
+    width: 250px;
+  }
+
+  .active .header-nav .burger-arrow img {
+    margin-left: 30px;
+  }
+
+  .main-date {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .main-heading {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .main-btn {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .main-btn1 {
+    padding: 10px 22px;
+  }
+
+  .venom {
+    width: 300px;
+  }
+
+  .blood {
+    width: 400px;
+  }
+
+  ._paragraph {
+    font-size: 14px;
   }
 }
 
